@@ -1,0 +1,37 @@
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource/cormorant-garamond/400-italic.css";
+@import "@fontsource/cormorant-garamond/500-italic.css";
+@import "@fontsource/cormorant-garamond/600-italic.css";
+@import "@fontsource/dm-sans/400.css";
+@import "@fontsource/dm-sans/500.css";
+@import "@fontsource/dm-sans/700.css";
+@import "@fontsource/caveat/500.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; color: #3B1A2E; background: #FCF7F4; font-family: 'DM Sans', system-ui, sans-serif; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+.mesh {
+  background:
+    radial-gradient(50% 35% at 10% 8%, rgba(243,182,200,.6), transparent 70%),
+    radial-gradient(45% 35% at 95% 22%, rgba(230,220,246,.9), transparent 70%),
+    radial-gradient(55% 40% at 20% 92%, rgba(248,225,232,.9), transparent 70%),
+    #FCF7F4;
+}
+.night-bg {
+  background:
+    radial-gradient(60% 40% at 50% 38%, rgba(217,86,127,.4), transparent 70%),
+    linear-gradient(180deg, #3B1A2E 0%, #2E1740 100%);
+}
+.glass { background: rgba(255,255,255,.62); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,.8); }
+.paper { background-color: #FFFDF9; background-image: repeating-linear-gradient(transparent 0 35px, rgba(217,86,127,.14) 35px 36px); }
+.hairline { height: 1px; background: linear-gradient(90deg, transparent, #C7A07A, transparent); }
+.btn-love { background: linear-gradient(135deg, #E56A93, #B53A64); color: #fff; font-weight: 500; letter-spacing: .01em; border-radius: 9999px; padding: .95rem 1.9rem; box-shadow: 0 16px 34px -14px rgba(181,58,100,.7); min-height: 48px; touch-action: manipulation; }
+.btn-soft { background: rgba(255,255,255,.9); color: #B53A64; font-weight: 500; border: 1px solid #F3B6C8; border-radius: 9999px; padding: .95rem 1.9rem; min-height: 48px; box-shadow: 0 12px 28px -16px rgba(181,58,100,.5); touch-action: manipulation; }
+.h2 { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-style: italic; line-height: 1.05; color: #3B1A2E; }
+:focus-visible { outline: 3px solid #A98BE0; outline-offset: 3px; border-radius: 12px; }
+.will-gpu { will-change: transform, opacity; transform: translateZ(0); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
